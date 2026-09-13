@@ -5,11 +5,20 @@
    "main": "lib/index.js",
    "types": "lib/index.d.ts",
    "type": "module",
+   "exports": {
+      ".": {
+         "types": "./lib/index.d.ts",
+         "module-sync": "./lib/index.js",
+         "import": "./lib/index.js",
+         "default": "./lib/index.js"
+      },
+      "./package.json": "./package.json"
+   },
    "scripts": {
       "preinstall": "node ./engine-requirements.js"
    },
    "engines": {
-      "node": ">=20.0.0"
+      "node": ">=20.19.0"
    },
    "repository": {
       "type": "git",
@@ -58,21 +67,11 @@
       "sharp": "*"
    },
    "peerDependenciesMeta": {
-      "@napi-rs/image": {
-         "optional": true
-      },
-      "audio-decode": {
-         "optional": true
-      },
-      "better-sqlite3": {
-         "optional": true
-      },
-      "jimp": {
-         "optional": true
-      },
-      "link-preview-js": {
-         "optional": true
-      }
+      "@napi-rs/image": { "optional": true },
+      "audio-decode": { "optional": true },
+      "better-sqlite3": { "optional": true },
+      "jimp": { "optional": true },
+      "link-preview-js": { "optional": true }
    },
    "bugs": {
       "url": "https://github.com/jexkpinkman/JexkCode-baileys/issues"
