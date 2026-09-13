@@ -1,6 +1,6 @@
 {
    "name": "jexkcode",
-   "version": "1.0.0",
+   "version": "1.1.0",
    "description": "JexkCode Baileys - Enhanced WhatsApp Web API with interactive messages, albums, newsletter support, and AIRich responses.",
    "main": "lib/index.js",
    "types": "lib/index.d.ts",
@@ -67,11 +67,21 @@
       "sharp": "*"
    },
    "peerDependenciesMeta": {
-      "@napi-rs/image": { "optional": true },
-      "audio-decode": { "optional": true },
-      "better-sqlite3": { "optional": true },
-      "jimp": { "optional": true },
-      "link-preview-js": { "optional": true }
+      "@napi-rs/image": {
+         "optional": true
+      },
+      "audio-decode": {
+         "optional": true
+      },
+      "better-sqlite3": {
+         "optional": true
+      },
+      "jimp": {
+         "optional": true
+      },
+      "link-preview-js": {
+         "optional": true
+      }
    },
    "bugs": {
       "url": "https://github.com/jexkpinkman/JexkCode-baileys/issues"
