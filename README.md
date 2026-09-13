@@ -2,10 +2,10 @@
 
 # 🚀 JexkCode Baileys
 
-[![npm version](https://img.shields.io/badge/version-1.0.0-blue?style=for-the-badge)](https://github.com/jexkpinkman/JexkCode-baileys)
+[![npm version](https://img.shields.io/badge/version-1.1.0-blue?style=for-the-badge)](https://github.com/jexkpinkman/JexkCode-baileys)
 [![Node.js](https://img.shields.io/badge/node-%3E%3D20-339933?logo=node.js&labelColor=green&logoColor=white&style=for-the-badge)](https://nodejs.org)
 [![License](https://img.shields.io/badge/license-MIT-blue?style=for-the-badge)](LICENSE)
-[![ESM](https://img.shields.io/badge/ESM-only-yellow?logo=javascript&labelColor=yellow&logoColor=black&style=for-the-badge)](#)
+[![ESM](https://img.shields.io/badge/Module-ESM%20%2B%20CJS-brightgreen?logo=javascript&labelColor=yellow&logoColor=black&style=for-the-badge)](#)
 
 **Enhanced WhatsApp Web API** — forked and customized by [jexkpinkman](https://github.com/jexkpinkman)
 
