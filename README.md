@@ -7,7 +7,7 @@
 <p>
   <img src="https://img.shields.io/badge/npm-install-CB3837?style=for-the-badge&logo=npm&logoColor=white" />
   <img src="https://img.shields.io/badge/license-MIT-2ea44f?style=for-the-badge" />
-  <img src="https://img.shields.io/badge/node-%3E%3D18-339933?style=for-the-badge&logo=node.js&logoColor=white" />
+  <img src="https://img.shields.io/badge/node-%3E%3D20.19.0-339933?style=for-the-badge&logo=node.js&logoColor=white" />
   <img src="https://img.shields.io/badge/status-active-blueviolet?style=for-the-badge" />
 </p>
 
@@ -17,7 +17,7 @@
 
 <br>
 
-## ▸ Table of Contents
+## 📋 Table of Contents
 
 - [Features](#-features)
 - [Install](#-install)
@@ -28,24 +28,24 @@
 
 <br>
 
-## ◆ Features
+## ✨ Features
 
 | Fitur | Deskripsi |
 |---|---|
-| **Interactive Messages** | buttons, lists, native flow, carousel |
-| **AIRich Response** | rich message, table, code block formatting |
-| **Newsletter Support** | media upload, subscribe management |
-| **Album Messages** | group image/video albums |
-| **Group Status** | group & channel status support |
-| **Sticker Pack** | full sticker pack send support |
-| **Poll & Quiz** | poll, quiz, poll result messages |
-| **Payment Messages** | invoice, payment invite, request payment |
-| **Spoiler & Ephemeral** | wrap messages as spoiler or ephemeral |
-| **SQLite Auth State** | persistent auth with SQLite |
+| 🔘 **Interactive Messages** | buttons, lists, native flow, carousel |
+| 🤖 **AIRich Response** | rich message, table, code block formatting |
+| 📰 **Newsletter Support** | media upload, subscribe management |
+| 🖼️ **Album Messages** | group image/video albums |
+| 📡 **Group Status** | group & channel status support |
+| 🏷️ **Sticker Pack** | full sticker pack send support |
+| 📊 **Poll & Quiz** | poll, quiz, poll result messages |
+| 💳 **Payment Messages** | invoice, payment invite, request payment |
+| 🕶️ **Spoiler & Ephemeral** | wrap messages as spoiler or ephemeral |
+| 🗄️ **SQLite Auth State** | persistent auth with SQLite |
 
 <br>
 
-## ▸ Install
+## 📦 Install
 
 ```bash
 npm install github:jexkpinkman/JexkCode-baileys
@@ -53,7 +53,7 @@ npm install github:jexkpinkman/JexkCode-baileys
 
 <br>
 
-## ▸ Quick Start
+## 🚀 Quick Start
 
 ```javascript
 import makeWASocket, { useMultiFileAuthState, DisconnectReason } from 'jexkcode'
@@ -77,10 +77,10 @@ sock.ev.on('connection.update', ({ connection, lastDisconnect }) => {
 
 <br>
 
-## ▸ Message Examples
+## 💬 Message Examples
 
 <details open>
-<summary><b>Interactive Button</b></summary>
+<summary><b>🔘 Interactive Button</b></summary>
 
 ```javascript
 await sock.sendMessage(jid, {
@@ -101,7 +101,7 @@ await sock.sendMessage(jid, {
 </details>
 
 <details>
-<summary><b>AIRich Response (Table)</b></summary>
+<summary><b>🤖 AIRich Response (Table)</b></summary>
 
 ```javascript
 await sock.sendMessage(jid, {
@@ -124,7 +124,7 @@ await sock.sendMessage(jid, {
 </details>
 
 <details>
-<summary><b>Album Message</b></summary>
+<summary><b>🖼️ Album Message</b></summary>
 
 ```javascript
 await sock.sendMessage(jid, {
@@ -140,7 +140,7 @@ await sock.sendMessage(jid, {
 </details>
 
 <details>
-<summary><b>Poll</b></summary>
+<summary><b>📊 Poll</b></summary>
 
 ```javascript
 await sock.sendMessage(jid, {
@@ -156,7 +156,7 @@ await sock.sendMessage(jid, {
 
 <br>
 
-## ▸ Auth State Options
+## 🔐 Auth State Options
 
 ```javascript
 // Multi-file (default)
@@ -174,7 +174,7 @@ const { state, saveCreds } = await useSQLiteAuthState('./auth.db')
 
 <br>
 
-## ▸ License
+## 📄 License
 
 **MIT License © 2026 jexkpinkman**
 
