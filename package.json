@@ -1,6 +1,6 @@
 {
    "name": "@jexkcode/baileys",
-   "version": "1.1.5",
+   "version": "1.2.0",
    "description": "JexkCode Baileys - Enhanced WhatsApp Web API with interactive messages, albums, newsletter support, and AIRich responses.",
    "main": "lib/index.js",
    "types": "lib/index.d.ts",
