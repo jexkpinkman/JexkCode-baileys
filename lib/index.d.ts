@@ -6,6 +6,7 @@ export * from "./Defaults/index.js";
 export * from "./WABinary/index.js";
 export * from "./WAM/index.js";
 export * from "./WAUSync/index.js";
+export { A2UI, sendA2UIWidget } from "./Builders/A2UI.js";
 export { makeWASocket };
 export default makeWASocket;
 import makeWASocket from './Socket/index.js';

@@ -45,6 +45,35 @@
 
 <br>
 
+
+## 🆕 v1.3.0 — fitur tambahan (port dari JAPofc/baileys, MIT)
+
+```js
+// Mini App: kartu + tombol buka web (bisa dengan link bertanda-tangan HMAC) / WhatsApp Flow
+await sock.sendMiniApp(jid, { title: 'App', body: 'Buka 👇', url: 'https://app.example', params: { ref: 'bot' },
+  secret: 'rahasia', expiresIn: 3600, openWebview: true })
+// verifikasi di server web kamu:  verifyMiniAppRequest(req.query, { secret })
+
+// A2UI widget
+const ui = new A2UI(); ui.root([ui.text('Halo', { variant: 'h1' }), ui.button(ui.text('Klik'))])
+await sock.sendA2UIWidget(jid, { a2ui: ui, bodyText: 'tes' })
+
+// Transkripsi voice note (Whisper-compatible)
+const { text } = await sock.transcribeMessage(m, { provider: openAIWhisperProvider({ apiKey }) })
+
+// Tombol nativeFlow baru: { webview }, { reminder }, { cancelReminder }, { address }, { location: true },
+// { catalog }, { products }, { flow }, { voiceCall }, { videoCall }, { clearChat }, { screen }
+
+await sock.sendScheduledCall(jid, { scheduledAt: Date.now() + 3600e3, callType: 'voice', title: 'Rapat' })
+await sock.sendMentionAll(jid, 'Halo semua')
+await sock.sendStatusMention({ text: 'hi' }, [jid1, jid2])
+
+// Username (baca-saja): checkUsername, checkUsernameMulti, getMyUsername, getUsernameRecommendations,
+// findUserByUsername, fetchContactUsernames — pakai query_id yang bisa kedaluwarsa (lihat sock.setUsernameQueryIds)
+
+// Util: autoReconnect, createMockSocket, exportChatAsCSV / exportChatAsText / exportChatAsJSON, chatStatistics
+```
+
 ## 📦 Install
 
 ```bash
