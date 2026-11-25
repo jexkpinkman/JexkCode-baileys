@@ -43,6 +43,15 @@ export function makeMessagesSocket(config: any): {
     getUSyncDevices: (jids: any, useCache: any, ignoreZeroDevices: any) => Promise<any[]>;
     messageRetryManager: MessageRetryManager | null;
     updateMemberLabel: (jid: any, memberLabel: any) => Promise<any>;
+    setChatTheme: (jid: string, theme?: {
+        colorSchemeId?: string;
+        isDoodleEnabled?: boolean;
+        wallpaper?: {
+            [k: string]: any;
+        };
+        clear?: boolean;
+    }) => Promise<string>;
+    clearChatTheme: (jid: string) => Promise<string>;
     updateMediaMessage: (message: any) => Promise<any>;
     sendMessage: (jid: any, content: any, options?: {}) => Promise<proto.WebMessageInfo | undefined>;
     executeWMexQuery: (variables: any, queryId: any, dataPath: any) => Promise<any>;
